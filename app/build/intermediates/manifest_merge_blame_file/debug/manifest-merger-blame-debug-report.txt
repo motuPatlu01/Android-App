@@ -1,0 +1,120 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.example.theadnan"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:5:5-66
+11-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] C:\Users\digital computer\.gradle\caches\transforms-3\cf89ab1ea7cc19352d4f47103c74320d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14        android:name="org.example.theadnan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] C:\Users\digital computer\.gradle\caches\transforms-3\cf89ab1ea7cc19352d4f47103c74320d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] C:\Users\digital computer\.gradle\caches\transforms-3\cf89ab1ea7cc19352d4f47103c74320d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="org.example.theadnan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] C:\Users\digital computer\.gradle\caches\transforms-3\cf89ab1ea7cc19352d4f47103c74320d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\digital computer\.gradle\caches\transforms-3\cf89ab1ea7cc19352d4f47103c74320d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:7:5-42:19
+20        android:allowBackup="true"
+20-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:9:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] C:\Users\digital computer\.gradle\caches\transforms-3\cf89ab1ea7cc19352d4f47103c74320d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="true"
+24        android:label="DesktopAppAndroid"
+24-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:8:9-42
+25        android:testOnly="true"
+26        android:theme="@style/Theme.App" >
+26-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:10:9-41
+27
+28        <!-- Launcher / Main Activity -->
+29        <activity
+29-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:13:9-20:20
+30            android:name="org.example.theadnan.LoginActivity"
+30-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:14:13-42
+31            android:exported="true" >
+31-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:15:13-36
+32            <intent-filter>
+32-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:16:13-19:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:17:17-68
+33-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:17:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:18:17-76
+35-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:18:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <!-- Other activities -->
+40        <activity
+40-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:23:9-25:39
+41            android:name="org.example.theadnan.RegisterActivity"
+41-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:24:13-45
+42            android:exported="false" />
+42-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:25:13-37
+43        <activity
+43-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:26:9-28:39
+44            android:name="org.example.theadnan.MainActivity"
+44-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:27:13-41
+45            android:exported="false" />
+45-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:28:13-37
+46        <activity
+46-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:29:9-31:39
+47            android:name="org.example.theadnan.DashboardActivity"
+47-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:30:13-46
+48            android:exported="false" />
+48-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:31:13-37
+49        <activity
+49-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:32:9-34:39
+50            android:name="org.example.theadnan.NotesActivity"
+50-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:33:13-42
+51            android:exported="false" />
+51-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:34:13-37
+52        <activity
+52-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:35:9-37:39
+53            android:name="org.example.theadnan.MoneyRequestsActivity"
+53-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:36:13-50
+54            android:exported="false" />
+54-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:37:13-37
+55        <activity
+55-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:38:9-40:39
+56            android:name="org.example.theadnan.ReportsActivity"
+56-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:39:13-44
+57            android:exported="false" />
+57-->E:\AndroidProject\DesktopAppAndroid\app\src\main\AndroidManifest.xml:40:13-37
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\digital computer\.gradle\caches\transforms-3\acd7b7be712c1ada299bcfc81b726076\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\digital computer\.gradle\caches\transforms-3\acd7b7be712c1ada299bcfc81b726076\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+61            android:authorities="org.example.theadnan.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\digital computer\.gradle\caches\transforms-3\acd7b7be712c1ada299bcfc81b726076\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\digital computer\.gradle\caches\transforms-3\acd7b7be712c1ada299bcfc81b726076\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\digital computer\.gradle\caches\transforms-3\acd7b7be712c1ada299bcfc81b726076\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\digital computer\.gradle\caches\transforms-3\acd7b7be712c1ada299bcfc81b726076\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\digital computer\.gradle\caches\transforms-3\acd7b7be712c1ada299bcfc81b726076\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\digital computer\.gradle\caches\transforms-3\2f569bc5cc97ee66011fd77f4e8c57ec\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\digital computer\.gradle\caches\transforms-3\2f569bc5cc97ee66011fd77f4e8c57ec\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\digital computer\.gradle\caches\transforms-3\2f569bc5cc97ee66011fd77f4e8c57ec\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+69        </provider>
+70    </application>
+71
+72</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.example.theadnan">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="DesktopAppAndroid"
+        android:allowBackup="true"
+        android:theme="@style/Theme.App">
+
+        <!-- Launcher / Main Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".NotesActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MoneyRequestsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

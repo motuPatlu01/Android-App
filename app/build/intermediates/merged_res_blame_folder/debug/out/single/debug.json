@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_dashboard.xml.flat",
+        "source": "org.example.theadnan.app-main-30:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_notes.xml.flat",
+        "source": "org.example.theadnan.app-main-30:/layout/activity_notes.xml"
+    },
+    {
+        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_reports.xml.flat",
+        "source": "org.example.theadnan.app-main-30:/layout/activity_reports.xml"
+    },
+    {
+        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "org.example.theadnan.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_requests.xml.flat",
+        "source": "org.example.theadnan.app-main-30:/layout/activity_requests.xml"
+    },
+    {
+        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_login.xml.flat",
+        "source": "org.example.theadnan.app-main-30:/layout/activity_login.xml"
+    },
+    {
+        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_register.xml.flat",
+        "source": "org.example.theadnan.app-main-30:/layout/activity_register.xml"
+    }
+]

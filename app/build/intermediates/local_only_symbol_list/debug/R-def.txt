@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color purple_500
+color teal_200
+id btnDoRegister
+id btnLogin
+id btnLogout
+id btnNotes
+id btnOpenDashboard
+id btnRegister
+id btnReports
+id btnRequests
+id editEmail
+id editPassword
+id editRegEmail
+id editRegName
+id editRegPassword
+id listNotes
+id listReports
+id listRequests
+id txtWelcome
+layout activity_dashboard
+layout activity_login
+layout activity_main
+layout activity_notes
+layout activity_register
+layout activity_reports
+layout activity_requests
+string app_name
+style Theme.App
