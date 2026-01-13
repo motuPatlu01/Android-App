@@ -4,27 +4,63 @@
         "source": "org.example.theadnan.app-main-30:/layout/activity_dashboard.xml"
     },
     {
-        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_notes.xml.flat",
-        "source": "org.example.theadnan.app-main-30:/layout/activity_notes.xml"
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_main.xml"
     },
     {
-        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_reports.xml.flat",
-        "source": "org.example.theadnan.app-main-30:/layout/activity_reports.xml"
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_search_user.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_search_user.xml"
     },
     {
-        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_main.xml.flat",
-        "source": "org.example.theadnan.app-main-30:/layout/activity_main.xml"
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_register.xml"
     },
     {
-        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_requests.xml.flat",
-        "source": "org.example.theadnan.app-main-30:/layout/activity_requests.xml"
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_reports.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_reports.xml"
     },
     {
-        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_login.xml.flat",
-        "source": "org.example.theadnan.app-main-30:/layout/activity_login.xml"
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_item_report.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\item_report.xml"
     },
     {
-        "merged": "org.example.theadnan.app-merged_res-28:/layout_activity_register.xml.flat",
-        "source": "org.example.theadnan.app-main-30:/layout/activity_register.xml"
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_requests.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_requests.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_currency_converter.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_currency_converter.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_messages.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_messages.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_weather.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_dialog_update_balance.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\dialog_update_balance.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_notes.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_notes.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_admin.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_dialog_edit_profile.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\dialog_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-merged_res-28:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\digital computer\\.gradle\\daemon\\8.5\\org.example.theadnan.app-main-30:\\layout\\activity_login.xml"
     }
 ]

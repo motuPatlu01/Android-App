@@ -5,11 +5,10 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:label="DesktopAppAndroid"
+        android:label="Gold Finance"
         android:allowBackup="true"
-        android:theme="@style/Theme.App">
+        android:theme="@style/Theme.DesktopAppAndroid">
 
-        <!-- Launcher / Main Activity -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -19,25 +18,17 @@
             </intent-filter>
         </activity>
 
-        <!-- Other activities -->
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".DashboardActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".NotesActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".MoneyRequestsActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".ReportsActivity"
-            android:exported="false"/>
+        <activity android:name=".RegisterActivity" android:exported="false"/>
+        <activity android:name=".MainActivity" android:exported="false"/>
+        <activity android:name=".DashboardActivity" android:exported="false"/>
+        <activity android:name=".NotesActivity" android:exported="false"/>
+        <activity android:name=".MoneyRequestsActivity" android:exported="false"/>
+        <activity android:name=".ReportsActivity" android:exported="false"/>
+        <activity android:name=".CurrencyConverterActivity" android:exported="false"/>
+        <activity android:name=".WeatherActivity" android:exported="false"/>
+        <activity android:name=".AdminActivity" android:exported="false"/>
+        <activity android:name=".MessagesActivity" android:exported="false"/>
+        <activity android:name=".SearchUserActivity" android:exported="false"/>
 
     </application>
 

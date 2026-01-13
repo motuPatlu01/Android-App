@@ -1,12 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="24dp"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#121212">
 
-    <Button android:id="@+id/btnNotes" android:text="Notes" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-    <Button android:id="@+id/btnRequests" android:text="Money Requests" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
-    <Button android:id="@+id/btnReports" android:text="Reports" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
-    <Button android:id="@+id/btnLogout" android:text="Logout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Profile Section -->
+        <LinearLayout
+            android:id="@+id/sectionProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#1E1E1E">
+
+                <ImageView
+                    android:id="@+id/ivProfileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_gallery" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:textColor="#FFD700"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <!-- Balance Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sectionBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#1E1E1E"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Balance"
+                    android:textColor="#FFD700"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnUpdateBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Balance"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#FFD700"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- User Info Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sectionUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#1E1E1E"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: --"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: --"
+                    android:textColor="#CCCCCC"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons -->
+        <Button android:id="@+id/btnNotes" style="@style/GlowingGoldenButton" android:text="Notes" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnRequests" style="@style/GlowingGoldenButton" android:text="Money Requests" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnMessages" style="@style/GlowingGoldenButton" android:text="Messages" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnSearchUser" style="@style/GlowingGoldenButton" android:text="Search User" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnReports" style="@style/GlowingGoldenButton" android:text="Reports" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnCurrencyConverter" style="@style/GlowingGoldenButton" android:text="Convert Currency" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnWeather" style="@style/GlowingGoldenButton" android:text="Weather Info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/btnAdminPanel" style="@style/GlowingGoldenButton" android:text="Admin Panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:visibility="gone"/>
+
+        <Button android:id="@+id/btnLogout" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:textColor="#FFD700" android:text="Logout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" app:strokeColor="#FFD700"/>
+
+    </LinearLayout>
+</ScrollView>

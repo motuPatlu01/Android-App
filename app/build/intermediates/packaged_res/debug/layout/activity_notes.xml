@@ -1,9 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="12dp"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <ListView android:id="@+id/listNotes" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note Editor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:inputType="text"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/noteTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E1E1E">
+        <com.google.android.material.tabs.TabItem android:text="Text" />
+        <com.google.android.material.tabs.TabItem android:text="Draw" />
+        <com.google.android.material.tabs.TabItem android:text="Scan" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginVertical="8dp">
+
+        <EditText
+            android:id="@+id/etNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Content"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:background="#2A2A2A"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"/>
+
+        <LinearLayout
+            android:id="@+id/drawContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#333333"
+                android:padding="4dp">
+                
+                <ImageButton
+                    android:id="@+id/btnColorBlack"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="#000000"
+                    android:layout_margin="2dp"/>
+                <ImageButton
+                    android:id="@+id/btnColorRed"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="#FF0000"
+                    android:layout_margin="2dp"/>
+                <ImageButton
+                    android:id="@+id/btnColorBlue"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="#0000FF"
+                    android:layout_margin="2dp"/>
+                <ImageButton
+                    android:id="@+id/btnColorGreen"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="#00FF00"
+                    android:layout_margin="2dp"/>
+                
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                
+                <Button
+                    android:id="@+id/btnErase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Erase"
+                    android:textSize="10sp"
+                    android:padding="0dp"/>
+            </LinearLayout>
+
+            <org.example.theadnan.DrawingView
+                android:id="@+id/drawingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scanContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#2A2A2A"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivScanPreview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_camera"/>
+
+            <Button
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Photo"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/btnSaveNote"
+            style="@style/GlowingGoldenButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:layout_marginEnd="4dp"/>
+            
+        <Button
+            android:id="@+id/btnDeleteNote"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textColor="#FF4444"
+            android:visibility="gone"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Notes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/listNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 </LinearLayout>

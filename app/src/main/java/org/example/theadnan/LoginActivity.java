@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +19,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private AndroidDatabaseHelper dbHelper;
     private EditText emailInput, passwordInput;
-    private Button btnLogin, btnRegister;
+    private Button btnLogin;
+    private TextView btnGoToRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +32,10 @@ public class LoginActivity extends AppCompatActivity {
         emailInput = findViewById(R.id.editEmail);
         passwordInput = findViewById(R.id.editPassword);
         btnLogin = findViewById(R.id.btnLogin);
-        btnRegister = findViewById(R.id.btnRegister);
+        btnGoToRegister = findViewById(R.id.btnGoToRegister);
 
         btnLogin.setOnClickListener(v -> attemptLogin());
-        btnRegister.setOnClickListener(v -> {
+        btnGoToRegister.setOnClickListener(v -> {
             startActivity(new Intent(this, RegisterActivity.class));
         });
     }

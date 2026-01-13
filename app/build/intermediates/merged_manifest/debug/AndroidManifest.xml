@@ -21,11 +21,9 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="true"
-        android:label="DesktopAppAndroid"
+        android:label="Gold Finance"
         android:testOnly="true"
-        android:theme="@style/Theme.App" >
-
-        <!-- Launcher / Main Activity -->
+        android:theme="@style/Theme.DesktopAppAndroid" >
         <activity
             android:name="org.example.theadnan.LoginActivity"
             android:exported="true" >
@@ -35,8 +33,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Other activities -->
         <activity
             android:name="org.example.theadnan.RegisterActivity"
             android:exported="false" />
@@ -54,6 +50,21 @@
             android:exported="false" />
         <activity
             android:name="org.example.theadnan.ReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name="org.example.theadnan.CurrencyConverterActivity"
+            android:exported="false" />
+        <activity
+            android:name="org.example.theadnan.WeatherActivity"
+            android:exported="false" />
+        <activity
+            android:name="org.example.theadnan.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name="org.example.theadnan.MessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name="org.example.theadnan.SearchUserActivity"
             android:exported="false" />
 
         <provider
